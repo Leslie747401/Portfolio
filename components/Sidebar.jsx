@@ -80,12 +80,23 @@ export default function Sidebar() {
                     <Link href={'https://www.linkedin.com/in/lesliedsilva74/'} target="_blank" rel="noopener noreferrer">
                         <div className='flex justify-between items-center px-[12px] py-[6px] hover:bg-[#efeeee] dark:hover:bg-[#474747] text-[#60646c] dark:text-[#ffffff99] hover:text-black transition-all duration-450 rounded-lg cursor-pointer group dark:hover:text-white max-laptop:py-[12px] max-laptop:rounded-xl laptop:pl-2.5'>
                             <div className='flex gap-4 items-center'>
+
                                 <Image
-                                    src={theme == 'light' ? lightLinkedin : darkLinkedin}
+                                    src={lightLinkedin}
                                     width={28}
                                     height={28}
                                     alt='instagram-logo'
+                                    className='block dark:hidden'
                                 />
+
+                                <Image
+                                    src={darkLinkedin}
+                                    width={28}
+                                    height={28}
+                                    alt='instagram-logo'
+                                    className='hidden dark:block'
+                                />
+
                                 <p className='text-[16px] font-medium text-inherit max-laptop:hidden'>LinkedIn</p>
                             </div>
                             <ArrowUpRight className='hidden group-hover:block text-inherit max-laptop:hidden max-laptop:group-hover:hidden'/>
@@ -95,13 +106,23 @@ export default function Sidebar() {
                     <Link href={'https://github.com/Leslie747401/'} target="_blank" rel="noopener noreferrer">
                         <div className='flex items-center justify-between px-[12px] py-[6px] hover:bg-[#efeeee] dark:hover:bg-[#474747] text-[#60646c] dark:text-[#ffffff99] hover:text-black transition-all duration-450 rounded-lg cursor-pointer group dark:hover:text-white max-laptop:py-[12px] max-laptop:rounded-xl laptop:pl-2.5'>
                             <div className='flex gap-4 items-center'>
+
                                 <Image
-                                    src={theme == 'light' ? lightGithub : darkGithub}
+                                    src={lightGithub}
                                     width={28}
                                     height={28}
                                     alt='instagram-logo'
-                                    className='text-inherit'
+                                    className='block dark:hidden'
                                 />
+
+                                <Image
+                                    src={darkGithub}
+                                    width={28}
+                                    height={28}
+                                    alt='instagram-logo'
+                                    className='hidden dark:block'
+                                />
+
                                 <p className='text-[16px] font-medium text-inherit max-laptop:hidden'>Github</p>
                             </div>
                             <ArrowUpRight className='hidden group-hover:block text-inherit max-laptop:hidden max-laptop:group-hover:hidden'/>
@@ -111,12 +132,23 @@ export default function Sidebar() {
                     <Link href={'https://www.instagram.com/lesliedsilva7744/'} target="_blank" rel="noopener noreferrer">
                         <div className='flex items-center justify-between px-[12px] py-[6px] hover:bg-[#efeeee] dark:hover:bg-[#474747] text-[#60646c] dark:text-[#ffffff99] hover:text-black transition-all duration-450 rounded-lg cursor-pointer group dark:hover:text-white max-laptop:py-[12px] max-laptop:rounded-xl laptop:pl-2.5'>
                             <div className='flex gap-4 items-center'>
+
                                 <Image
-                                    src={theme == 'light' ? lightInstagram : darkInstagram}
+                                    src={lightInstagram}
                                     width={28}
                                     height={28}
                                     alt='instagram-logo'
+                                    className='block dark:hidden'
                                 />
+
+                                <Image
+                                    src={darkInstagram}
+                                    width={28}
+                                    height={28}
+                                    alt='instagram-logo'
+                                    className='hidden dark:block'
+                                />
+
                                 <p className='text-[16px] font-medium text-inherit max-laptop:hidden'>Instagram</p>
                             </div>
                             <ArrowUpRight className='hidden group-hover:block text-inherit max-laptop::hidden max-laptop:group-hover:hidden'/>
