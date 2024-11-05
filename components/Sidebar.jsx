@@ -35,6 +35,7 @@ export default function Sidebar() {
                         <p className='text-[16px] font-medium leading-[1.6em] tracking-[-0.01em]'>Leslie Dsilva</p>
                         <p className='text-[#60646c] dark:text-[#ffffff99] text-[14px] leading-[1.6em] tracking-[-0.01em]'>Fullstack Developer</p>
                     </div>
+
                 </div>
 
                 {/* Different Routes */}
@@ -42,31 +43,51 @@ export default function Sidebar() {
                 <div className='flex flex-col gap-1 mb-4'>
 
                     <Link href={'/'}>
+
                         <div className={`${route == '/' && 'bg-[#efeeee] dark:bg-[#474747]'} flex items-center px-[12px] py-[8px] rounded-lg cursor-pointer dark:hover:text-white dark:hover:bg-[#474747] transition-all duration-500 max-laptop:justify-center max-laptop:py-[12px] max-laptop:rounded-xl laptop:gap-4 laptop:pl-2.5`} >
+
                             <Home width={20} height={20} className={`${route == '/' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'}`}/>
+                            
                             <p className={`text-[16px] font-medium ${route == '/' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'} max-laptop:hidden`}>Home</p>
+                       
                         </div>
+
                     </Link>
 
                     <Link href={'/projects'}>
+
                         <div className={`${route == '/projects' && 'bg-[#efeeee] dark:bg-[#474747] dark:text-white'} flex items-center hover:bg-[#efeeee] px-[12px] py-[8px] rounded-lg cursor-pointer text-[#ffffff99] hover:text-black transition-all duration-500 dark:hover:text-white dark:hover:bg-[#474747] max-laptop:justify-center max-laptop:py-[12px] max-laptop:rounded-xl laptop:gap-4 laptop:pl-2.5`}>
+                            
                             <BriefcaseBusiness  width={20} height={20} className={`${route == '/projects' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'}`}/>
+                            
                             <p className={`text-[16px] font-medium ${route == '/projects' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'} max-laptop:hidden`}>Projects</p>
+                        
                         </div>
+                    
                     </Link>
 
                     <Link href={'/about'}>
+                        
                         <div className={`${route == '/about' && 'bg-[#efeeee] dark:bg-[#474747] dark:text-white'} flex items-center hover:bg-[#efeeee] px-[12px] py-[8px] rounded-lg cursor-pointer text-[#ffffff99] hover:text-black transition-all duration-500 dark:hover:text-white dark:hover:bg-[#474747] max-laptop:justify-center max-laptop:py-[12px] max-laptop:rounded-xl laptop:gap-4 laptop:pl-2.5`}>
+                            
                             <User width={20} height={20} className={`${route == '/about' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'}`}/>
+                            
                             <p className={`text-[16px] font-medium ${route == '/about' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'} max-laptop:hidden`}>About</p>
+                        
                         </div>
+
                     </Link>
 
                     <Link href={'/contact'}>
+                        
                         <div className={`${route == '/contact' && 'bg-[#efeeee] dark:bg-[#474747] dark:text-white'} flex items-center hover:bg-[#efeeee] px-[12px] py-[8px] rounded-lg cursor-pointer text-[#ffffff99] hover:text-black transition-all duration-500 dark:hover:text-white dark:hover:bg-[#474747] max-laptop:justify-center max-laptop:py-[12px] max-laptop:rounded-xl laptop:gap-4 laptop:pl-2.5`}>
+                            
                             <Mail width={20} height={20} className={`${route == '/contact' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'}`}/>
+                            
                             <p className={`text-[16px] font-medium ${route == '/contact' ? 'text-black dark:text-white' : 'text-[#60646c] dark:text-[#ffffff99]'} max-laptop:hidden`}>Contact</p>
+                        
                         </div>
+                    
                     </Link>
 
                 </div>
@@ -78,15 +99,17 @@ export default function Sidebar() {
                 <div className='flex flex-col gap-0.5 max-laptop:gap-1'>
 
                     <Link href={'https://www.linkedin.com/in/lesliedsilva74/'} target="_blank" rel="noopener noreferrer">
+                        
                         <div className='flex justify-between items-center px-[12px] py-[6px] hover:bg-[#efeeee] dark:hover:bg-[#474747] text-[#60646c] dark:text-[#ffffff99] hover:text-black transition-all duration-450 rounded-lg cursor-pointer group dark:hover:text-white max-laptop:py-[12px] max-laptop:rounded-xl laptop:pl-2.5'>
+                            
                             <div className='flex gap-4 items-center'>
 
                                 <Image
                                     src={lightLinkedin}
-                                    width={28}
-                                    height={28}
+                                    width={32}
+                                    height={32}
                                     alt='instagram-logo'
-                                    className='block dark:hidden'
+                                    className='dark:hidden block'
                                 />
 
                                 <Image
@@ -98,13 +121,19 @@ export default function Sidebar() {
                                 />
 
                                 <p className='text-[16px] font-medium text-inherit max-laptop:hidden'>LinkedIn</p>
+                            
                             </div>
+                            
                             <ArrowUpRight className='hidden group-hover:block text-inherit max-laptop:hidden max-laptop:group-hover:hidden'/>
+                        
                         </div>
+                    
                     </Link>
 
                     <Link href={'https://github.com/Leslie747401/'} target="_blank" rel="noopener noreferrer">
+                        
                         <div className='flex items-center justify-between px-[12px] py-[6px] hover:bg-[#efeeee] dark:hover:bg-[#474747] text-[#60646c] dark:text-[#ffffff99] hover:text-black transition-all duration-450 rounded-lg cursor-pointer group dark:hover:text-white max-laptop:py-[12px] max-laptop:rounded-xl laptop:pl-2.5'>
+                            
                             <div className='flex gap-4 items-center'>
 
                                 <Image
@@ -124,13 +153,19 @@ export default function Sidebar() {
                                 />
 
                                 <p className='text-[16px] font-medium text-inherit max-laptop:hidden'>Github</p>
+                            
                             </div>
+                            
                             <ArrowUpRight className='hidden group-hover:block text-inherit max-laptop:hidden max-laptop:group-hover:hidden'/>
+                        
                         </div>
+                    
                     </Link>
 
                     <Link href={'https://www.instagram.com/lesliedsilva7744/'} target="_blank" rel="noopener noreferrer">
+                        
                         <div className='flex items-center justify-between px-[12px] py-[6px] hover:bg-[#efeeee] dark:hover:bg-[#474747] text-[#60646c] dark:text-[#ffffff99] hover:text-black transition-all duration-450 rounded-lg cursor-pointer group dark:hover:text-white max-laptop:py-[12px] max-laptop:rounded-xl laptop:pl-2.5'>
+                            
                             <div className='flex gap-4 items-center'>
 
                                 <Image
@@ -150,9 +185,13 @@ export default function Sidebar() {
                                 />
 
                                 <p className='text-[16px] font-medium text-inherit max-laptop:hidden'>Instagram</p>
+                            
                             </div>
+                            
                             <ArrowUpRight className='hidden group-hover:block text-inherit max-laptop::hidden max-laptop:group-hover:hidden'/>
+                        
                         </div>
+                    
                     </Link>
 
                 </div>
